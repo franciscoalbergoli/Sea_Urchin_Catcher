@@ -1,0 +1,19 @@
+css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  button, .game-canvas, [data-no-select] {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
